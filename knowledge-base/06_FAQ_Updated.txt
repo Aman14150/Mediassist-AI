@@ -1,7 +1,7 @@
 Frequently Asked Questions
 
 Q: What services are available?
-A: Available services are General Physician, OPD Consultation, Telemedicine, General Medicine, Dental Care, Cardiology, Neurology, Orthopedics, Physiotherapy, Nutrition & Dietetics, Dermatology, Pediatrics, Oncology, Radiology, and Emergency Medicine.
+A: Available services are General Physician, OPD Consultation, Telemedicine, General Medicine, Dental Care, Cardiology, Neurology, Psychology, Orthopedics, Physiotherapy, Nutrition & Dietetics, Dermatology, Pediatrics, Oncology, Radiology, and Emergency Medicine.
 
 Q: Do you have a general physician?
 A: Yes. General Physician appointments are available with Dr. Nitin Patel, Dr. Anita Rao, and Dr. Rohan Mehta.
@@ -26,6 +26,9 @@ A: Yes. Physiotherapy appointments are available with Dr. Rhea Kapoor, Dr. Vikra
 
 Q: Do you have nutritionist or dietician appointments?
 A: Yes. Nutrition & Dietetics appointments are available with Dr. Meera Joshi, Dr. Anjali Rao, and Dr. Kabir Sen.
+
+Q: Do you have a psychologist or counselling service?
+A: Yes. Psychology appointments are available with Dr. Maya Kapoor, Dr. Arvind Shah, and Dr. Neelam Joshi. Live dates and times must be checked before offering a slot.
 
 Q: What are your working hours?
 A: Medicare Hospital is open Monday to Saturday from 10:00 AM to 5:00 PM.
@@ -52,4 +55,4 @@ Q: Do I need to pay online?
 A: No. This prototype does not process real online payments. The applicable consultation fee can be paid at the hospital.
 
 Q: Can the assistant give medical advice?
-A: No. MediAssist AI only helps with appointment booking. For medical advice, patients should consult a doctor.
+A: MediAssist AI cannot diagnose, prescribe medicine, or recommend treatment. For a routine non-emergency concern it may give one brief, low-risk comfort or self-care suggestion and help choose and book the appropriate department.

@@ -128,6 +128,7 @@ USING (VALUES
     (N'dental-care', N'Dental Care', 500),
     (N'cardiology', N'Cardiology', 700),
     (N'neurology', N'Neurology', 700),
+    (N'psychology', N'Psychology', 600),
     (N'orthopedics', N'Orthopedics', 600),
     (N'physiotherapy', N'Physiotherapy', 400),
     (N'nutrition-dietetics', N'Nutrition & Dietetics', 400),
@@ -156,7 +157,8 @@ USING (VALUES
     (N'Dr. Emily Rodriguez'), (N'Dr. Sneha Kulkarni'), (N'Dr. Vivek Rao'),
     (N'Dr. Lisa Anderson'), (N'Dr. Nandita Shah'), (N'Dr. Harish Menon'),
     (N'Dr. Jennifer Lee'), (N'Dr. Sanjay Nair'), (N'Dr. Anika Bose'),
-    (N'Dr. Robert Martinez'), (N'Dr. Farah Siddiqui'), (N'Dr. Manoj Patel')
+    (N'Dr. Robert Martinez'), (N'Dr. Farah Siddiqui'), (N'Dr. Manoj Patel'),
+    (N'Dr. Maya Kapoor'), (N'Dr. Arvind Shah'), (N'Dr. Neelam Joshi')
 ) AS source([name]) ON target.[name] = source.[name]
 WHEN NOT MATCHED THEN INSERT ([name]) VALUES (source.[name]);
 GO
@@ -172,6 +174,7 @@ USING (
         (N'Dr. Neha Kapoor', N'Dental Care', NULL), (N'Dr. Arjun Nair', N'Dental Care', NULL), (N'Dr. Priya Desai', N'Dental Care', NULL),
         (N'Dr. Marcus Johnson', N'Cardiology', NULL), (N'Dr. Priya Sharma', N'Cardiology', NULL), (N'Dr. Amit Verma', N'Cardiology', NULL),
         (N'Dr. Sarah Williams', N'Neurology', NULL), (N'Dr. Karan Malhotra', N'Neurology', NULL), (N'Dr. Meera Iyer', N'Neurology', NULL),
+        (N'Dr. Maya Kapoor', N'Psychology', N'Counselling Psychologist'), (N'Dr. Arvind Shah', N'Psychology', N'Clinical Psychologist'), (N'Dr. Neelam Joshi', N'Psychology', N'Counselling Psychologist'),
         (N'Dr. Michael Chen', N'Orthopedics', NULL), (N'Dr. Sandeep Kulkarni', N'Orthopedics', NULL), (N'Dr. Nisha Bhatia', N'Orthopedics', NULL),
         (N'Dr. Rhea Kapoor', N'Physiotherapy', NULL), (N'Dr. Vikram Nair', N'Physiotherapy', NULL), (N'Dr. Aditi Sharma', N'Physiotherapy', NULL),
         (N'Dr. Meera Joshi', N'Nutrition & Dietetics', NULL), (N'Dr. Anjali Rao', N'Nutrition & Dietetics', NULL), (N'Dr. Kabir Sen', N'Nutrition & Dietetics', NULL),
@@ -208,7 +211,7 @@ END;
 GO
 
 MERGE app_metadata AS target
-USING (VALUES (N'schema_version', N'2')) AS source([name], [value]) ON target.[name] = source.[name]
+USING (VALUES (N'schema_version', N'3')) AS source([name], [value]) ON target.[name] = source.[name]
 WHEN MATCHED THEN UPDATE SET [value] = source.[value]
 WHEN NOT MATCHED THEN INSERT ([name], [value]) VALUES (source.[name], source.[value]);
 GO

@@ -13,6 +13,7 @@ General Medicine: Rs. 500
 Dental Care: Rs. 500
 Cardiology: Rs. 700
 Neurology: Rs. 700
+Psychology: Rs. 600
 Orthopedics: Rs. 600
 Physiotherapy: Rs. 400
 Nutrition & Dietetics: Rs. 400

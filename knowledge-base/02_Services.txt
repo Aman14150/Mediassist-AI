@@ -16,6 +16,8 @@ Cardiology
 
 Neurology
 
+Psychology
+
 Orthopedics
 
 Physiotherapy
@@ -48,6 +50,11 @@ Telemedicine Includes
 Video consultation
 Phone consultation
 
+Psychology Includes
+Non-crisis support for overthinking, stress, anxiety, low mood, and sleep concerns
+Counselling and clinical psychology consultations
+Psychology appointments are not emergency or crisis services
+
 Important Service Mapping
 
 If a patient asks for general physician, physician, doctor consultation, normal doctor, general doctor, health checkup, full body checkup, routine checkup, fever (including high or very high fever without an explicitly stated emergency symptom), cough, general consultation, body checkup, weakness, or basic health concern, map it to General Physician first.
@@ -62,7 +69,9 @@ If a patient asks for physiotherapist, physiotherapy, physical therapy, rehab, r
 
 If a patient asks for nutritionist, dietician, dietitian, diet plan, nutrition counselling, weight management, meal plan, food guidance, or wellness diet, map it to Nutrition & Dietetics.
 
+If a patient asks about overthinking, stress, anxiety, low mood, emotional wellbeing, sleep difficulty, counselling, therapist, or psychologist, map it to Psychology unless they mention suicide, self-harm, or immediate danger.
+
 Important Notes
 General Physician should be offered before OPD Consultation for general health concerns.
 Do not offer departments or services outside this list.
-Do not provide medical advice when explaining services.
+For a routine, non-emergency concern, the assistant may give one brief low-risk comfort or self-care suggestion, then offer the matching department. Do not diagnose, prescribe medicine, recommend treatment, or replace professional care.

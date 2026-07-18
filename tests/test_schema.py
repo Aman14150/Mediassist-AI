@@ -21,15 +21,16 @@ class BookingSchemaTests(unittest.TestCase):
             for table in ("departments", "doctors", "doctor_departments", "availability")
         }
         self.assertEqual(counts, {
-            "departments": 15,
-            "doctors": 42,
-            "doctor_departments": 45,
-            "availability": 2772,
+            "departments": 16,
+            "doctors": 45,
+            "doctor_departments": 48,
+            "availability": 2970,
         })
-        self.assertEqual(self.db.execute("PRAGMA user_version").fetchone()[0], 2)
+        self.assertEqual(self.db.execute("PRAGMA user_version").fetchone()[0], 3)
         fees = dict(self.db.execute("SELECT slug, consultation_fee_inr FROM departments"))
         self.assertEqual(fees["general-physician"], 300)
         self.assertEqual(fees["cardiology"], 700)
+        self.assertEqual(fees["psychology"], 600)
 
     def test_doctor_and_patient_duplicates_are_blocked(self):
         self.db.execute("INSERT INTO patients (full_name, phone) VALUES (?, ?)", ("Patient A", "+9111111111"))

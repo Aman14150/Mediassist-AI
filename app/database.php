@@ -60,6 +60,14 @@ function connect_sqlite(): PDO
             throw new RuntimeException('Database fee migration is missing.');
         }
         $pdo->exec($migration);
+        $version = 2;
+    }
+    if ($version < 3) {
+        $migration = file_get_contents(APP_ROOT . '/database/migrations/003_psychology.sql');
+        if ($migration === false) {
+            throw new RuntimeException('Database psychology migration is missing.');
+        }
+        $pdo->exec($migration);
     }
     return $pdo;
 }
@@ -105,7 +113,7 @@ function connect_sql_server(): PDO
         PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION,
         PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC,
     ]);
-    if (sql_server_schema_version($pdo) < 2) {
+    if (sql_server_schema_version($pdo) < 3) {
         run_sql_server_schema($pdo);
     }
     return $pdo;
