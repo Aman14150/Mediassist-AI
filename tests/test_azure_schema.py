@@ -47,6 +47,13 @@ class AzureSqlSchemaTests(unittest.TestCase):
         self.assertIn("Encrypt=yes", database_php)
         self.assertIn("TrustServerCertificate=no", database_php)
 
+    def test_sql_server_rate_limit_avoids_reserved_time_aliases(self):
+        security_php = (ROOT / "app" / "security.php").read_text(encoding="utf-8")
+        self.assertIn("source.current_epoch", security_php)
+        self.assertIn("source.cutoff_epoch", security_php)
+        self.assertNotIn("source.current_time", security_php)
+        self.assertNotIn("source.cutoff_time", security_php)
+
 
 if __name__ == "__main__":
     unittest.main()

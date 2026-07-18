@@ -33,13 +33,13 @@ function rate_limit(string $bucket, int $limit, int $windowSeconds): void
     $now = time();
     if (database_driver() === 'sqlsrv') {
         $stmt = db()->prepare('MERGE rate_limits WITH (HOLDLOCK) AS target
-            USING (SELECT :key AS rate_key, :now AS current_time, :cutoff AS cutoff_time) AS source
+            USING (SELECT :key AS rate_key, :now AS current_epoch, :cutoff AS cutoff_epoch) AS source
             ON target.[key] = source.rate_key
             WHEN MATCHED THEN UPDATE SET
-                window_started_at = CASE WHEN target.window_started_at <= source.cutoff_time THEN source.current_time ELSE target.window_started_at END,
-                request_count = CASE WHEN target.window_started_at <= source.cutoff_time THEN 1 ELSE target.request_count + 1 END
+                window_started_at = CASE WHEN target.window_started_at <= source.cutoff_epoch THEN source.current_epoch ELSE target.window_started_at END,
+                request_count = CASE WHEN target.window_started_at <= source.cutoff_epoch THEN 1 ELSE target.request_count + 1 END
             WHEN NOT MATCHED THEN INSERT ([key], window_started_at, request_count)
-                VALUES (source.rate_key, source.current_time, 1)
+                VALUES (source.rate_key, source.current_epoch, 1)
             OUTPUT INSERTED.window_started_at, INSERTED.request_count;');
     } else {
         $stmt = db()->prepare('INSERT INTO rate_limits (key, window_started_at, request_count) VALUES (:key, :now, 1)
