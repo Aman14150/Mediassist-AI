@@ -144,4 +144,26 @@
     });
   });
 
+  /**
+   * MediAssist ElevenLabs voice and chat widget
+   */
+  function initMediAssistWidget() {
+    if (document.querySelector('elevenlabs-convai')) return;
+
+    const widget = document.createElement('elevenlabs-convai');
+    widget.setAttribute('agent-id', 'agent_2101kxsgx5q2epnvtx3bxm0fjkph');
+    document.body.appendChild(widget);
+
+    if (!document.querySelector('script[data-mediassist-widget]')) {
+      const script = document.createElement('script');
+      script.src = 'https://unpkg.com/@elevenlabs/convai-widget-embed';
+      script.async = true;
+      script.type = 'text/javascript';
+      script.dataset.mediassistWidget = 'true';
+      document.body.appendChild(script);
+    }
+  }
+
+  window.addEventListener('load', initMediAssistWidget);
+
 })();
