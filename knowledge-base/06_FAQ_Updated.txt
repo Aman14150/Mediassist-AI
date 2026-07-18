@@ -34,13 +34,13 @@ Q: Are appointments available on Sunday?
 A: No. Appointments are available Monday through Saturday only.
 
 Q: What is the hospital address?
-A: Medicare Hospital is located at 42 Wellness Avenue, Indiranagar, Bengaluru 560038.
+A: Medicare Hospital is located at 42 Wellness Avenue, Indiranagar 560038.
 
 Q: What is the reception phone number?
 A: The reception phone number is +91 2143658790.
 
 Q: What is the emergency phone number?
-A: The emergency phone number is +91 80 4567 2499.
+A: The emergency phone number is +91 2143658790.
 
 Q: What is the hospital email address?
 A: The email address is info@medicarehospital.com.

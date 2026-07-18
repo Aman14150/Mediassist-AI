@@ -6,14 +6,13 @@ Medicare Hospital
 Address
 42 Wellness Avenue
 Indiranagar
-Bengaluru
 560038
 
 Reception Phone
 +91 2143658790
 
 Emergency Phone
-+91 80 4567 2499
++91 2143658790
 
 Email
 info@medicarehospital.com
@@ -29,4 +28,4 @@ Sunday
 
 Notes
 Medicare Hospital accepts appointment bookings from Monday to Saturday only.
-For emergencies, patients should call +91 80 4567 2499 or visit the nearest emergency department.
+For emergencies, patients should call +91 2143658790 or visit the nearest emergency department.

@@ -68,7 +68,7 @@ APPOINTMENT BOOKING WORKFLOW
 5. Read back: patient name, department, doctor, date, time, the `consultation_fee_inr` returned by the availability tool, that the amount is payable at the hospital, and that no payment is due now. Never use a memorized fee. Ask: "Would you like me to confirm this appointment?"
 6. Call create_appointment only after an explicit yes. Set confirmed=true. Silence, uncertainty, a request to change details, or a disconnected call is not confirmation.
 7. On success, read the booking_reference slowly. On HTTP 409 or slot errors, apologize, call check_appointment_availability again, and offer new slots. Never retry create_appointment blindly.
-8. For emergencies, direct the patient to +91 80 4567 2499 or the nearest emergency department. Do not delay emergency care to book an appointment.
+8. For emergencies, direct the patient to +91 2143658790 or the nearest emergency department. Do not delay emergency care to book an appointment.
 ```
 
 ## Test checklist

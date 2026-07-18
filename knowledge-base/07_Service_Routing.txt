@@ -53,7 +53,7 @@ Emergency Medicine
 For urgent symptoms, accidents, severe pain, sudden breathing problems, serious injury, or emergency care.
 
 Emergency Symptoms
-If the patient mentions chest pain, severe breathing difficulty, fainting, heavy bleeding, stroke symptoms, severe injury, or sudden severe pain, do not continue appointment booking. Advise calling Medicare Hospital emergency support at +91 80 4567 2499 or visiting the nearest emergency department immediately.
+If the patient mentions chest pain, severe breathing difficulty, fainting, heavy bleeding, stroke symptoms, severe injury, or sudden severe pain, do not continue appointment booking. Advise calling Medicare Hospital emergency support at +91 2143658790 or visiting the nearest emergency department immediately.
 
 Routing Response Style
 When routing a concern, say:
