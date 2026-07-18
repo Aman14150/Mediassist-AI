@@ -20,3 +20,18 @@ class AgentRoutingTests(unittest.TestCase):
         for red_flag in ("chest pain", "severe breathing difficulty", "fainting", "heavy bleeding", "stroke symptoms"):
             self.assertIn(red_flag, prompt)
         self.assertIn("emergency guidance overrides routing", prompt)
+
+    def test_unlisted_non_crisis_mental_health_concerns_offer_general_physician(self):
+        prompt = (ROOT / "ELEVENLABS_SYSTEM_PROMPT.md").read_text(encoding="utf-8")
+        routing = (ROOT / "knowledge-base" / "07_Service_Routing.txt").read_text(encoding="utf-8")
+
+        for phrase in ("overthinking", "Psychology and Psychiatry are not currently listed", "offer General Physician"):
+            self.assertIn(phrase, prompt)
+            self.assertIn(phrase, routing)
+
+    def test_self_harm_is_an_emergency_exception(self):
+        prompt = (ROOT / "ELEVENLABS_SYSTEM_PROMPT.md").read_text(encoding="utf-8")
+
+        self.assertIn("suicide", prompt)
+        self.assertIn("self-harm", prompt)
+        self.assertIn("immediate danger to self or others", prompt)

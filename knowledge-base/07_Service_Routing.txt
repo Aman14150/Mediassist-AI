@@ -10,6 +10,8 @@ Use emergency guidance only for an explicitly stated Emergency Symptom listed be
 
 General Physician
 For general physician, physician, doctor consultation, normal doctor, general doctor, health checkup, full body checkup, routine checkup, fever (including high or very high fever when no Emergency Symptom is stated), cough, cold, weakness, body pain, headache, basic health concern, or preventive care.
+For overthinking, stress, anxiety, low mood, sleep difficulty, or another non-crisis mental-health concern, explain that Psychology and Psychiatry are not currently listed services and offer General Physician as the available first-contact department. Do not diagnose or provide counselling.
+For any other non-emergency concern that does not clearly match a listed specialist, offer General Physician rather than refusing all appointment help.
 
 OPD Consultation
 For OPD, outpatient consultation, pediatrician, gynecologist, gynecology, women's health appointment, in-person doctor visit, or general outpatient appointment.
@@ -55,6 +57,7 @@ For urgent symptoms, accidents, severe pain, sudden breathing problems, serious 
 
 Emergency Symptoms
 If the patient mentions chest pain, severe breathing difficulty, fainting, heavy bleeding, stroke symptoms, severe injury, or sudden severe pain, do not continue appointment booking. Advise calling Medicare Hospital emergency support at +91 2143658790 or visiting the nearest emergency department immediately.
+Thoughts or plans of suicide, self-harm, or immediate danger to self or others are also Emergency Symptoms. Respond compassionately and advise immediate emergency help; do not continue routine booking.
 Fever alone is not an Emergency Symptom in this routing guide. Route it to General Physician, or Pediatrics when the caller says the patient is a child. Emergency guidance overrides this only when an Emergency Symptom is also explicitly reported.
 
 Routing Response Style
