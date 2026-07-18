@@ -50,7 +50,7 @@ Phone consultation
 
 Important Service Mapping
 
-If a patient asks for general physician, physician, doctor consultation, normal doctor, general doctor, health checkup, full body checkup, routine checkup, fever, cough, general consultation, body checkup, weakness, or basic health concern, map it to General Physician first.
+If a patient asks for general physician, physician, doctor consultation, normal doctor, general doctor, health checkup, full body checkup, routine checkup, fever (including high or very high fever without an explicitly stated emergency symptom), cough, general consultation, body checkup, weakness, or basic health concern, map it to General Physician first.
 
 If a patient specifically asks for OPD, outpatient, pediatrician, gynecologist, gynecology, women's health appointment, or in-person consultation, map it to OPD Consultation.
 
