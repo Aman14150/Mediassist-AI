@@ -10,13 +10,31 @@ function bearer_token(): string
     return trim($matches[1]);
 }
 
+function normalize_webhook_secret(string $secret): string
+{
+    $secret = trim($secret);
+    if (preg_match('/^Bearer\s+(.+)$/i', $secret, $matches) === 1) {
+        return trim($matches[1]);
+    }
+    return $secret;
+}
+
+function elevenlabs_webhook_token(): string
+{
+    $direct = trim((string) ($_SERVER['HTTP_X_MEDIASSIST_KEY'] ?? ''));
+    if ($direct !== '') {
+        return normalize_webhook_secret($direct);
+    }
+    return bearer_token();
+}
+
 function require_elevenlabs_auth(): void
 {
-    $expected = env('ELEVENLABS_WEBHOOK_SECRET', '') ?? '';
+    $expected = normalize_webhook_secret(env('ELEVENLABS_WEBHOOK_SECRET', '') ?? '');
     if (strlen($expected) < 32) {
         throw new ApiException(503, 'Webhook authentication is not configured.', 'configuration_error');
     }
-    $provided = bearer_token();
+    $provided = elevenlabs_webhook_token();
     if ($provided === '' || !hash_equals($expected, $provided)) {
         throw new ApiException(401, 'Invalid webhook credentials.', 'unauthorized');
     }

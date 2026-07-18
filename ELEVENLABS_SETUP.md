@@ -2,18 +2,18 @@
 
 Use the complete agent prompt in [ELEVENLABS_SYSTEM_PROMPT.md](ELEVENLABS_SYSTEM_PROMPT.md). Upload only the seven files in the `knowledge-base` directory; do not also upload the older Downloads copies because their fixed Rs. 500 instructions conflict with live fees.
 
-Use **server-side Webhook tools**, not client tools. Replace `https://hospital.example.com` below with the HTTPS origin in `APP_URL`. In ElevenLabs, create a bearer-token secret whose value exactly matches `ELEVENLABS_WEBHOOK_SECRET` in the deployed server environment. Never paste that secret into the website JavaScript or knowledge-base files.
+Use **server-side Webhook tools**, not client tools. Replace `https://hospital.example.com` below with the HTTPS origin in `APP_URL`. In ElevenLabs, create a secret whose raw value exactly matches `ELEVENLABS_WEBHOOK_SECRET` in the deployed server environment. Never paste that secret into the website JavaScript or knowledge-base files.
 
 An MCP server is not required for this project. The booking backend currently exposes two authenticated REST endpoints, so Webhook tools are the direct and lower-complexity integration. Do not attach a third-party MCP server to patient booking data. Build a dedicated authenticated MCP server only if a future integration specifically requires MCP and has received a separate privacy/security review.
 
-ElevenLabs' current dashboard flow is Agent → Tools → Add Tool → Webhook. Configure the request body content type as `application/json`, add an `Authorization` bearer-token secret, and set a response timeout around 10 seconds.
+ElevenLabs' current dashboard flow is Agent → Tools → Add Tool → Webhook. Configure the request body content type as `application/json`, add an `X-MediAssist-Key` Secret header containing the raw secret, and set a response timeout around 10 seconds. The backend also supports the standard `Authorization: Bearer <secret>` format for other clients.
 
 ## Tool 1: `check_appointment_availability`
 
 - Description: `Checks live Medicare Hospital appointment slots. Call after the patient has selected a department and date, and optionally a doctor. Read available choices from the response. This tool never books.`
 - Method: `POST`
 - URL: `https://hospital.example.com/api/elevenlabs/check-availability.php`
-- Authentication: Bearer token secret matching `ELEVENLABS_WEBHOOK_SECRET`
+- Authentication: `X-MediAssist-Key` Secret header matching `ELEVENLABS_WEBHOOK_SECRET`
 - Body parameters:
 
 | Identifier | Type | Required | LLM description |
