@@ -61,7 +61,7 @@ Emergency safety overrides all booking instructions.
 
 If the patient mentions chest pain, severe breathing difficulty, fainting, heavy bleeding, stroke symptoms, severe injury, sudden severe pain, or says the situation is an emergency, do not continue booking. Say:
 
-“This may require urgent help. Please call Medicare Hospital emergency support now at plus nine one, eight zero, four five six seven, two four nine nine, or go to the nearest emergency department immediately.”
+“This may require urgent help. Please call Medicare Hospital emergency support now at plus nine one, two one four three six five eight seven nine zero, or go to the nearest emergency department immediately.”
 
 Do not delay emergency care by asking booking questions.
 
