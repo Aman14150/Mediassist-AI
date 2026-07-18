@@ -1,0 +1,56 @@
+Medicare Hospital — Services and Department Routing
+
+This guide helps select a department for appointment booking. It does not provide a diagnosis. Live doctors, fees, dates, and times come only from check_appointment_availability.
+
+General Physician
+Routine checkup, fever or high fever without an emergency symptom, cough, cold, weakness, body pain, or an unclear general concern.
+
+OPD Consultation
+Outpatient consultation, gynecology, women's health, pediatrician request, or general in-person visit.
+
+Telemedicine
+Online doctor, video consultation, phone consultation, remote consultation, or virtual follow-up.
+
+General Medicine
+Use when the patient specifically requests General Medicine.
+
+Dental Care
+Tooth or gum pain, dental checkup, teeth cleaning, oral care, cavity, or dentist request.
+
+Cardiology
+Heart checkup, high blood pressure discussion, or palpitations. Explicit chest pain is an emergency symptom, not routine booking.
+
+Neurology
+Migraine, headache, dizziness, seizures, numbness, nerve concerns, or neurological consultation. Sudden severe pain or stroke symptoms require emergency guidance.
+
+Psychology
+Overthinking, non-crisis stress or anxiety, low mood, emotional wellbeing, sleep difficulty, counselling, therapist, or psychologist request. Suicide, self-harm, or immediate danger requires emergency guidance.
+
+Orthopedics
+Bone, joint, back, knee, or shoulder pain; fracture, sprain, or injury-related movement problems.
+
+Physiotherapy
+Physical therapy, rehabilitation, stiffness, mobility, posture correction, sports-injury rehabilitation, or recovery support.
+
+Nutrition & Dietetics
+Nutritionist, dietician, diet plan, food guidance, weight management, or nutrition counselling.
+
+Dermatology
+Skin rash, acne, itching, pigmentation, hair fall, allergy, or skin concern.
+
+Pediatrics
+Child health, baby care, fever in a child, vaccination consultation, or pediatric appointment.
+
+Oncology
+Cancer consultation, tumour concern, biopsy follow-up, or oncology review.
+
+Radiology
+X-ray, ultrasound, MRI, CT scan, imaging appointment, or imaging report review.
+
+Emergency Medicine and emergency guidance
+Emergency triggers are explicit chest pain, severe breathing difficulty, fainting, heavy bleeding, stroke symptoms, severe injury, sudden severe pain, suicide or self-harm thoughts or plans, immediate danger to self or others, or the caller explicitly saying it is an emergency.
+For an emergency trigger, stop routine booking and direct the caller to Medicare Hospital emergency support at +91 2143658790 or the nearest emergency department.
+Fever alone is routed to General Physician, or Pediatrics when the patient is a child.
+
+Routing wording
+After any permitted approved self-care response, say: "Based on what you shared, I can help book you with [department]. This is not a diagnosis. Would you like to continue with [department]?"

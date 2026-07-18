@@ -1,0 +1,24 @@
+Medicare Hospital — Approved Prototype Self-Care Responses
+
+Use at most one exact response below for a routine non-emergency concern. Never combine, expand, personalize, or present it as treatment. Do not use any response when an emergency trigger is present. After the response, route to a department and offer booking.
+
+Overthinking, routine stress, or non-crisis anxiety
+"For now, try taking a few slow breaths and pause somewhere quiet. If it continues or worries you, seek professional care."
+
+Mild fever, cough, cold, weakness, or body discomfort
+"For now, rest and drink fluids. If it worsens or worries you, seek medical care."
+
+Routine headache or migraine without an emergency trigger
+"For now, rest somewhere quiet and drink fluids. If it worsens or worries you, seek medical care."
+
+Mild skin irritation, acne, or itching without an emergency trigger
+"For now, avoid any known irritant and avoid scratching the area. If it worsens or worries you, seek medical care."
+
+Routine joint, back, knee, or muscle discomfort without a serious injury
+"For now, rest and avoid activity that makes the discomfort worse. If it worsens or worries you, seek medical care."
+
+Routine sleep difficulty
+"For now, try a quiet wind-down routine and reduce screen use before bed. If it continues or worries you, seek professional care."
+
+No matching approved response
+Do not provide a suggestion. State that this is not a diagnosis, route to the appropriate department, and offer an appointment.

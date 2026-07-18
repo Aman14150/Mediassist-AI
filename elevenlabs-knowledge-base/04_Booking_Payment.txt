@@ -1,0 +1,28 @@
+Medicare Hospital — Booking and Payment Facts
+
+Normal schedule
+Appointments are normally offered Monday to Saturday between 10:00 AM and 5:00 PM. The hospital is closed Sunday.
+Possible recurring times include 10:00, 10:15, 10:30, 11:00, 11:15, 12:00, 15:00, 15:15, 16:00, 16:15, and 17:00.
+These are not proof of availability. Offer only dates, doctors, times, and fees returned by check_appointment_availability.
+
+Prototype consultation fees
+General Physician Rs. 300
+OPD Consultation Rs. 400
+Telemedicine Rs. 300
+General Medicine Rs. 500
+Dental Care Rs. 500
+Cardiology Rs. 700
+Neurology Rs. 700
+Psychology Rs. 600
+Orthopedics Rs. 600
+Physiotherapy Rs. 400
+Nutrition & Dietetics Rs. 400
+Dermatology Rs. 500
+Pediatrics Rs. 500
+Oncology Rs. 800
+Radiology Rs. 500
+Emergency Medicine Rs. 800
+
+The live fee returned by check_appointment_availability is authoritative. Read it before final confirmation.
+No payment is collected by this prototype. Payment is made at the hospital. Never request card, bank, UPI, OTP, PIN, or payment credentials.
+Tests, scans, medicines, procedures, treatment, emergency services, and admission are not included in a consultation fee.

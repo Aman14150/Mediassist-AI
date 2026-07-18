@@ -1,0 +1,22 @@
+Medicare Hospital — Prototype Doctor Roster
+
+This roster identifies departments only. Never claim a doctor is available until check_appointment_availability returns that doctor and at least one live slot.
+
+General Physician: Dr. Nitin Patel; Dr. Anita Rao; Dr. Rohan Mehta
+OPD Consultation: Dr. Nitin Patel — Physician; Dr. Lakshmi Iyer — Pediatrician; Dr. Pooja Mishra — Gynecologist
+Telemedicine: Dr. Sameer Kulkarni — Video; Dr. Farah Ansari — Phone; Dr. Rahul Deshmukh — Video or phone
+General Medicine: Dr. Anita Rao; Dr. Rohan Mehta; Dr. Kavita Menon
+Dental Care: Dr. Neha Kapoor; Dr. Arjun Nair; Dr. Priya Desai
+Cardiology: Dr. Marcus Johnson; Dr. Priya Sharma; Dr. Amit Verma
+Neurology: Dr. Sarah Williams; Dr. Karan Malhotra; Dr. Meera Iyer
+Psychology: Dr. Maya Kapoor — Counselling Psychologist; Dr. Arvind Shah — Clinical Psychologist; Dr. Neelam Joshi — Counselling Psychologist
+Orthopedics: Dr. Michael Chen; Dr. Sandeep Kulkarni; Dr. Nisha Bhatia
+Physiotherapy: Dr. Rhea Kapoor; Dr. Vikram Nair; Dr. Aditi Sharma
+Nutrition & Dietetics: Dr. Meera Joshi; Dr. Anjali Rao; Dr. Kabir Sen
+Dermatology: Dr. David Thompson; Dr. Ayesha Khan; Dr. Rahul Sethi
+Pediatrics: Dr. Emily Rodriguez; Dr. Sneha Kulkarni; Dr. Vivek Rao
+Oncology: Dr. Lisa Anderson; Dr. Nandita Shah; Dr. Harish Menon
+Radiology: Dr. Jennifer Lee; Dr. Sanjay Nair; Dr. Anika Bose
+Emergency Medicine: Dr. Robert Martinez; Dr. Farah Siddiqui; Dr. Manoj Patel
+
+Offer no more than three returned doctors. Never invent or cross-route a doctor. Partial names may be matched only when the match is unambiguous.

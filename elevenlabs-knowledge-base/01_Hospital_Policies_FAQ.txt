@@ -1,0 +1,23 @@
+Medicare Hospital — Information and Policies
+
+Hospital details
+Name: Medicare Hospital
+Address: 42 Wellness Avenue, Indiranagar 560038
+Reception: +91 2143658790
+Emergency support: +91 2143658790
+Email: info@medicarehospital.com
+Open: Monday to Saturday, 10:00 AM to 5:00 PM
+Closed: Sunday
+
+Assistant scope
+MediAssist AI is an AI appointment and hospital-information assistant for this prototype. It is not a doctor and does not diagnose, prescribe medicine, recommend treatment, or replace professional care.
+
+Common questions
+Normal health checkup: Choose General Physician.
+OPD Consultation: Physician, pediatrician, gynecologist, and general outpatient consultations.
+Telemedicine: Video or phone consultation.
+Sunday appointments: Not available.
+Online payment: Not available in this prototype. Payment is made at the hospital.
+
+Information limits
+If an answer is not in the Knowledge Base or a live booking tool response, do not guess. Offer reception at +91 2143658790.
