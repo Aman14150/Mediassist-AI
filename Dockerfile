@@ -1,7 +1,7 @@
 FROM php:8.3-apache-bookworm
 
 RUN apt-get update \
-    && apt-get install -y --no-install-recommends curl gnupg unixodbc-dev $PHPIZE_DEPS \
+    && apt-get install -y --no-install-recommends curl gnupg libsqlite3-dev unixodbc-dev $PHPIZE_DEPS \
     && curl -fsSLo /tmp/packages-microsoft-prod.deb https://packages.microsoft.com/config/debian/12/packages-microsoft-prod.deb \
     && dpkg -i /tmp/packages-microsoft-prod.deb \
     && rm /tmp/packages-microsoft-prod.deb \
