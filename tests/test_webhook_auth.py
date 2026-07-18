@@ -19,3 +19,13 @@ class WebhookAuthenticationTests(unittest.TestCase):
     def test_elevenlabs_auth_keeps_bearer_compatibility(self):
         self.assertIn("return bearer_token();", self.security)
         self.assertIn("^Bearer\\s+(.+)$", self.security)
+
+    def test_elevenlabs_routes_use_signed_slot_flow_without_custom_header(self):
+        for endpoint in ("check-availability.php", "create-appointment.php"):
+            route = (ROOT / "api" / "elevenlabs" / endpoint).read_text(encoding="utf-8")
+            self.assertNotIn("require_elevenlabs_auth", route)
+            self.assertIn("rate_limit(", route)
+
+        appointments = (ROOT / "app" / "appointments.php").read_text(encoding="utf-8")
+        self.assertIn("verify_slot_token", appointments)
+        self.assertIn("confirmation_required", appointments)
