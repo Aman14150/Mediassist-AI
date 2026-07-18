@@ -1,0 +1,9 @@
+.git
+.agents
+.env
+storage/*.sqlite
+storage/*.sqlite-*
+storage/*.db
+storage/*.db-*
+tests/__pycache__
+*.log

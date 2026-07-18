@@ -1,0 +1,6 @@
+.env
+storage/*.sqlite
+storage/*.sqlite-*
+storage/rate-limits/*.json
+tests/__pycache__/
+*.pyc

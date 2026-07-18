@@ -1,0 +1,68 @@
+Available Services
+
+Medicare Hospital currently accepts appointments for these departments:
+
+General Physician
+
+OPD Consultation
+
+Telemedicine
+
+General Medicine
+
+Dental Care
+
+Cardiology
+
+Neurology
+
+Orthopedics
+
+Physiotherapy
+
+Nutrition & Dietetics
+
+Dermatology
+
+Pediatrics
+
+Oncology
+
+Radiology
+
+Emergency Medicine
+
+General Physician Includes
+Routine health checkups
+Fever, cough, cold, weakness, and body pain consultation
+General health concerns
+Preventive care consultation
+
+OPD Consultation Includes
+Physician
+Pediatrician
+Gynecologist
+General outpatient consultation
+
+Telemedicine Includes
+Video consultation
+Phone consultation
+
+Important Service Mapping
+
+If a patient asks for general physician, physician, doctor consultation, normal doctor, general doctor, health checkup, full body checkup, routine checkup, fever, cough, general consultation, body checkup, weakness, or basic health concern, map it to General Physician first.
+
+If a patient specifically asks for OPD, outpatient, pediatrician, gynecologist, gynecology, women's health appointment, or in-person consultation, map it to OPD Consultation.
+
+If a patient asks for online doctor, video consultation, video call, phone consultation, teleconsultation, remote consultation, or telemedicine, map it to Telemedicine.
+
+If a patient asks for dental appointment, dental checkup, dentist appointment, tooth pain, teeth cleaning, oral care, gum issue, or tooth issue, map it to Dental Care.
+
+If a patient asks for physiotherapist, physiotherapy, physical therapy, rehab, rehabilitation, mobility exercise, posture correction, sports injury rehab, or recovery support, map it to Physiotherapy.
+
+If a patient asks for nutritionist, dietician, dietitian, diet plan, nutrition counselling, weight management, meal plan, food guidance, or wellness diet, map it to Nutrition & Dietetics.
+
+Important Notes
+General Physician should be offered before OPD Consultation for general health concerns.
+Do not offer departments or services outside this list.
+Do not provide medical advice when explaining services.

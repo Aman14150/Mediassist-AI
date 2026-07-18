@@ -1,0 +1,55 @@
+Frequently Asked Questions
+
+Q: What services are available?
+A: Available services are General Physician, OPD Consultation, Telemedicine, General Medicine, Dental Care, Cardiology, Neurology, Orthopedics, Physiotherapy, Nutrition & Dietetics, Dermatology, Pediatrics, Oncology, Radiology, and Emergency Medicine.
+
+Q: Do you have a general physician?
+A: Yes. General Physician appointments are available with Dr. Nitin Patel, Dr. Anita Rao, and Dr. Rohan Mehta.
+
+Q: What should I choose for a normal health checkup?
+A: For a normal health checkup, choose General Physician.
+
+Q: What is included in OPD Consultation?
+A: OPD Consultation includes physician, pediatrician, gynecologist, and general outpatient consultations.
+
+Q: Do you provide telemedicine?
+A: Yes. Telemedicine is available by video consultation or phone consultation.
+
+Q: Which doctors are available for OPD?
+A: OPD doctors are Dr. Nitin Patel for Physician consultation, Dr. Lakshmi Iyer for Pediatrician consultation, and Dr. Pooja Mishra for Gynecologist consultation.
+
+Q: Which doctors are available for Telemedicine?
+A: Telemedicine doctors are Dr. Sameer Kulkarni for video consultation, Dr. Farah Ansari for phone consultation, and Dr. Rahul Deshmukh for video or phone consultation.
+
+Q: Do you have physiotherapy appointments?
+A: Yes. Physiotherapy appointments are available with Dr. Rhea Kapoor, Dr. Vikram Nair, and Dr. Aditi Sharma.
+
+Q: Do you have nutritionist or dietician appointments?
+A: Yes. Nutrition & Dietetics appointments are available with Dr. Meera Joshi, Dr. Anjali Rao, and Dr. Kabir Sen.
+
+Q: What are your working hours?
+A: Medicare Hospital is open Monday to Saturday from 10:00 AM to 5:00 PM.
+
+Q: Are appointments available on Sunday?
+A: No. Appointments are available Monday through Saturday only.
+
+Q: What is the hospital address?
+A: Medicare Hospital is located at 42 Wellness Avenue, Indiranagar, Bengaluru 560038.
+
+Q: What is the reception phone number?
+A: The reception phone number is +91 2143658790.
+
+Q: What is the emergency phone number?
+A: The emergency phone number is +91 80 4567 2499.
+
+Q: What is the hospital email address?
+A: The email address is info@medicarehospital.com.
+
+Q: How much is the consultation fee?
+A: The fee depends on the department and starts at Rs. 300 for General Physician. For a live booking, use the fee returned by the check_appointment_availability tool.
+
+Q: Do I need to pay online?
+A: No. This prototype does not process real online payments. The applicable consultation fee can be paid at the hospital.
+
+Q: Can the assistant give medical advice?
+A: No. MediAssist AI only helps with appointment booking. For medical advice, patients should consult a doctor.

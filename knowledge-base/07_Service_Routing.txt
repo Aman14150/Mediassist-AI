@@ -1,0 +1,60 @@
+Service Routing Guide
+
+Important Rule
+This guide is only for helping patients choose a department for appointment booking.
+Do not diagnose.
+Do not give medical advice.
+Do not recommend medicine or treatment.
+Emergency safety overrides every other routing rule below.
+
+General Physician
+For general physician, physician, doctor consultation, normal doctor, general doctor, health checkup, full body checkup, routine checkup, fever, cough, cold, weakness, body pain, headache, basic health concern, or preventive care.
+
+OPD Consultation
+For OPD, outpatient consultation, pediatrician, gynecologist, gynecology, women's health appointment, in-person doctor visit, or general outpatient appointment.
+
+Telemedicine
+For telemedicine, video consultation, video call doctor, phone consultation, online doctor, remote consultation, virtual appointment, or follow-up by phone or video.
+
+General Medicine
+For general medical consultation when the patient specifically asks for General Medicine.
+
+Pediatrics
+For child health, baby care, fever in children, vaccination consultation, pediatric appointment, or pediatrician request.
+
+Physiotherapy
+For physiotherapist, physiotherapy, physical therapy, rehab, rehabilitation, sports injury rehab, mobility improvement, posture correction, stiffness, movement support, or recovery exercises.
+
+Nutrition & Dietetics
+For nutritionist, dietician, dietitian, diet plan, meal plan, food guidance, weight management, diabetes diet discussion, wellness diet, or nutrition counselling.
+
+Dental Care
+For tooth pain, dental checkup, teeth cleaning, gum pain, oral care, cavity, or dentist appointment.
+
+Cardiology
+For heart-related concerns, chest discomfort, palpitations, high blood pressure, heart checkup, or cardiac consultation.
+
+Neurology
+For headache, migraine, dizziness, seizures, numbness, weakness, nerve concerns, or brain and nervous system consultation.
+
+Orthopedics
+For bone pain, joint pain, back pain, knee pain, shoulder pain, fracture, sprain, or injury-related movement problems.
+
+Dermatology
+For skin rash, acne, allergy, itching, hair fall, pigmentation, or skin infection concerns.
+
+Oncology
+For cancer consultation, tumor-related concern, biopsy follow-up, or oncology review.
+
+Radiology
+For scan, X-ray, ultrasound, MRI, CT scan, imaging appointment, or report review.
+
+Emergency Medicine
+For urgent symptoms, accidents, severe pain, sudden breathing problems, serious injury, or emergency care.
+
+Emergency Symptoms
+If the patient mentions chest pain, severe breathing difficulty, fainting, heavy bleeding, stroke symptoms, severe injury, or sudden severe pain, do not continue appointment booking. Advise calling Medicare Hospital emergency support at +91 80 4567 2499 or visiting the nearest emergency department immediately.
+
+Routing Response Style
+When routing a concern, say:
+"Based on what you shared, I can help book you with [department]. This is not a diagnosis. Would you like to continue with [department]?"

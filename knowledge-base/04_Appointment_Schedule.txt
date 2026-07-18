@@ -1,0 +1,36 @@
+Normal Appointment Schedule
+
+Important Live Availability Rule
+This document contains normal booking days and possible time options only. It does not contain live bookings.
+Always call check_appointment_availability before telling a patient that a doctor, date, or time is available.
+The tool response is authoritative.
+
+Booking Days
+Monday
+Tuesday
+Wednesday
+Thursday
+Friday
+Saturday
+
+Closed
+Sunday
+
+Available 15-Minute Time Slots
+10:00 AM
+10:15 AM
+10:30 AM
+11:00 AM
+11:15 AM
+12:00 PM
+3:00 PM
+3:15 PM
+4:00 PM
+4:15 PM
+5:00 PM
+
+Important Notes
+Appointments are available Monday through Saturday only.
+Sunday appointments are not available.
+Never offer a time from this document alone. Offer only currently free slots returned by check_appointment_availability.
+If a requested time is not returned by the tool, politely say it is unavailable and offer returned alternatives.
