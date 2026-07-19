@@ -95,7 +95,7 @@ function check_availability(array $data): array
         'date' => $date->format('Y-m-d'),
         'timezone' => date_default_timezone_get(),
         'doctors' => $result,
-        'instruction' => 'Read the options to the patient. Do not call create_appointment until the patient explicitly confirms one doctor, date, and time.',
+        'instruction' => 'Use the caller preferred time to choose at most two relevant returned options. Never read every doctor or slot. Do not call create_appointment until after the complete booking summary and a new explicit yes.',
     ];
 }
 

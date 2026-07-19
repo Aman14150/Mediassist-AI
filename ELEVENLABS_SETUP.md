@@ -1,6 +1,6 @@
 # ElevenLabs voice-agent setup
 
-Use the complete agent prompt in [ELEVENLABS_SYSTEM_PROMPT.md](ELEVENLABS_SYSTEM_PROMPT.md). Upload only the seven files in the `knowledge-base` directory; do not also upload the older Downloads copies because their fixed Rs. 500 instructions conflict with live fees.
+Use the complete agent prompt in [ELEVENLABS_SYSTEM_PROMPT.md](ELEVENLABS_SYSTEM_PROMPT.md). Upload only the five curated files in the `elevenlabs-knowledge-base` directory; do not upload older copies because they can conflict with live fees and current routing.
 
 Use **server-side Webhook tools**, not client tools. Replace `https://hospital.example.com` below with the HTTPS origin in `APP_URL`. No custom header is required: these routes use rate limits, signed short-lived slot confirmation tokens, explicit patient confirmation, and database constraints. Never paste application secrets into the website JavaScript or knowledge-base files.
 
@@ -10,7 +10,7 @@ ElevenLabs' current dashboard flow is Agent → Tools → Add Tool → Webhook. 
 
 ## Tool 1: `check_appointment_availability`
 
-- Description: `Checks live Medicare Hospital appointment slots. Call after the patient has selected a department and date, and optionally a doctor. Read available choices from the response. This tool never books.`
+- Description: `Checks live Medicare Hospital appointment slots. Call only after the patient has confirmed a department, date, and preferred time or time window. Include a doctor only when requested. Match the preferred time and offer at most two relevant returned choices; never read every doctor or slot. This tool never books.`
 - Method: `POST`
 - URL: `https://hospital.example.com/api/elevenlabs/check-availability.php`
 - Authentication: none; leave request headers empty
@@ -36,7 +36,7 @@ Each returned slot has `time`, `display_time`, and `confirmation_token`. Retain 
 
 ## Tool 2: `create_appointment`
 
-- Description: `Creates one Medicare Hospital appointment. Call only after check_appointment_availability and only after reading back patient name, phone, department, doctor, date and time and receiving an explicit yes/confirmation. Pass the chosen slot's confirmation_token. Never use for tentative requests.`
+- Description: `Creates one Medicare Hospital appointment. After an exact slot is selected, read back patient name, department, doctor, date, time, and live fee, then ask the final confirmation question. Call only after a new explicit yes to that summary. Earlier words such as book, okay, slot selection, or contact details are not confirmation. Pass the exact slot confirmation_token.`
 - Method: `POST`
 - URL: `https://hospital.example.com/api/elevenlabs/create-appointment.php`
 - Authentication: none; leave request headers empty
@@ -62,11 +62,11 @@ Add this after the existing hospital knowledge/routing instructions:
 ```text
 APPOINTMENT BOOKING WORKFLOW
 1. Help the patient choose only a listed department. This is routing, not diagnosis.
-2. Collect a date and call check_appointment_availability. Never claim a slot is free from the knowledge base alone.
-3. Offer only doctors and slots returned by the tool. Keep the confirmation_token for the chosen slot private; never read it aloud.
+2. Collect a date and preferred time or time window before calling check_appointment_availability. Never claim a slot is free from the knowledge base alone.
+3. Offer at most two relevant doctors or slots returned by the tool. If the preferred time is unavailable, offer at most two nearest alternatives. Keep the confirmation_token for the chosen slot private; never read it aloud.
 4. Collect full name and phone; email is optional. Do not ask for card, UPI, bank, OTP, PIN, or medical-record details.
 5. Read back: patient name, department, doctor, date, time, the `consultation_fee_inr` returned by the availability tool, that the amount is payable at the hospital, and that no payment is due now. Never use a memorized fee. Ask: "Would you like me to confirm this appointment?"
-6. Call create_appointment only after an explicit yes. Set confirmed=true. Silence, uncertainty, a request to change details, or a disconnected call is not confirmation.
+6. Wait for a new explicit yes after the complete read-back and final question before calling create_appointment. Earlier words such as book or okay do not count. Set confirmed=true. Silence, uncertainty, a request to change details, or a disconnected call is not confirmation.
 7. On success, read the booking_reference slowly. On HTTP 409 or slot errors, apologize, call check_appointment_availability again, and offer new slots. Never retry create_appointment blindly.
 8. For emergencies, direct the patient to +91 2143658790 or the nearest emergency department. Do not delay emergency care to book an appointment.
 ```
